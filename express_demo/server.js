@@ -17,6 +17,9 @@
    Otherwise, the request will be left hanging
    Middleware can be attatched to the req-res cycle by calling app.use([path], function(req,res,next)) where you can attach the middleware function to an optional path
 
+   The order in which you define middleware is important. It will execute in the order of the file. 
+   So, when a request comes in, it'll hit every single middlware function consecutviely in order from top to bottom until one of the functions returns a response or fails to call next
+
    Error-handling middleware must have their functions defined with four arguments instead of four ( app.use(function(err,req,res,next)) )
    Even if not all of the objects are used in the defined middleware function (for example next() ) all four arguments must be supplied to maintain the signature
    */
