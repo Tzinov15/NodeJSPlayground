@@ -24,6 +24,16 @@ Not an app, but more a single file with a lot of comments that helped me make se
 Contains explanation of how event-driven programming works in Node
 
 
+<h2> restful_express_api </h2>
+
+The result of following a tutorial from scotch.io on creating an API using Express
+
+
+<h2> modules_demo </h2>
+
+An example and large explanation on how the module system works in NodeJS. Not super in depth, but enough to understand how require statements work
+and how to use module.exports. See <b>greetings.js</b> for the large comment section, see main.js for how the sample modules get imported and used
+
 <h2> block_read.js and nonblock_read.js </h2>
 
 Two different files that read in a sample file (input.txt) and demonstrate the difference between synchrnous and asychrnous functions
