@@ -37,3 +37,11 @@ and how to use module.exports. See <b>greetings.js</b> for the large comment sec
 <h2> block_read.js and nonblock_read.js </h2>
 
 Two different files that read in a sample file (input.txt) and demonstrate the difference between synchrnous and asychrnous functions
+
+
+
+<h2> passportjs </h2>
+
+The result of following a tutorial from scotch.io on creating an authenticated app using PassportJS
+<a>https://scotch.io/tutorials/easy-node-authentication-setup-and-local</a>
+<a>http://passportjs.org</a>
