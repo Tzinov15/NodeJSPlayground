@@ -20,8 +20,13 @@
    The order in which you define middleware is important. It will execute in the order of the file. 
    So, when a request comes in, it'll hit every single middlware function consecutviely in order from top to bottom until one of the functions returns a response or fails to call next
 
+   app.use('/someroute', someMiddleware) can be used so that any routes that begin with /someroute such as /someroute/hello or /someroute/hi/alex will have the passed in middleware invoked (someMiddleware in this case)
+   if app.use has no path specified, the middlware supplied will be invoked for every route (thinking for logging every single request, sessions, etc)
+
    Error-handling middleware must have their functions defined with four arguments instead of four ( app.use(function(err,req,res,next)) )
    Even if not all of the objects are used in the defined middleware function (for example next() ) all four arguments must be supplied to maintain the signature
+
+   IMPORTANT: If res.send never gets called and instead the last middleware in the stack calls next(), Express will default to calling the last middleware which will return a 404
    */
 
 // a third-party middleware for logging stuff
