@@ -45,3 +45,7 @@ Two different files that read in a sample file (input.txt) and demonstrate the d
 The result of following a tutorial from scotch.io on creating an authenticated app using PassportJS
 <a>https://scotch.io/tutorials/easy-node-authentication-setup-and-local</a>
 <a>http://passportjs.org</a>
+
+
+<h2> Mocha </h2>
+Did a quick easy tutorial for Mocha. Not a lot to learn from this section because it was a short tutorial and I didn't comment a lot, but there are some (limited) notes on describe(), it(), and hooks at the top of the test/server.js. I followed this tutorial <a>https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha</a>
